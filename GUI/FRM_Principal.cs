@@ -88,9 +88,7 @@ namespace GUI
                     }
                 }
                 catch (Exception ex)
-                {
-                    MessageBox.Show("Error Inesperado: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                { MessageBox.Show("Error Inesperado: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
             else { MessageBox.Show("Debe completar todos los datos del paciente", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
         }
@@ -131,7 +129,7 @@ namespace GUI
                 rtbxEvaluaciones.Text = jsonString;
             }
             catch (Exception ex)
-            { MessageBox.Show("Error: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);  }
+            { MessageBox.Show("Error: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
     }
 }
